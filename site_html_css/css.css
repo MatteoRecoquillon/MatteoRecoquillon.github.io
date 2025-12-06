@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;         /*cette fois la commande s'applique a tout et non seulement a une particularité*/
+}
+
+body {
+    background-color: #C75915;
+    color: white;
+    line-height: 1.6;
+}
+                                                 /* le body,header,h1,nav ul ... qui vont s'appliquer a tout les sites webs sans restrictions*/
+header {
+    background-color: #C75915;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.button {
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 1rem;
+	text-align:center;
+	text-decoration: none;                   /* la catégorie button qui enveloppe a chaque fois la commande en html*/
+	display: inline-block;
+	font-size: 1rem;
+	margin: 4px 2px;
+	border-radius: 2rem;
+}
+
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+	background-position: center;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+                                        /* la valeur rem  permet de définir une valeur constante, égale à la taille de la police qui s'affiche sur l'écran*/
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.genres {
+    padding: 2rem;
+    background-image: url("https://www.ficsum.com/wp-content/uploads/2021/05/MUSIQUE1_79014757_800X600.jpg");   /*background appliqué avec des marges de restrictions*/
+    margin: 2rem auto;
+    max-width: 1200px;
+	
+}
+
+.genres h2 {
+	background-color: black;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.genres .genre-list {
+    display: flex;
+    justify-content: space-around;              /*il est crée des tableaux de chaque genres musicaux grace a la catégorie genre qu'on a crée précédament pour faciliter et propager sur toute les catégories*/
+    flex-wrap: wrap;
+}
+
+.genres .genre-item {
+    background-color: #C75915;
+    border-radius: 10px;
+    width: 22%;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.genres .genre-item h3 {   
+    color: black;
+}
+
+.genres .genre-item p {
+    margin-top: 10px;
+    color: black;
+
+}
+
+.about {
+	    margin-top: 100px;      /*une marge de 100px est appliqué apres le header de la page*/
+}
+
+.about h2 {
+	    margin-top: 100px;      
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;       /*en bas de la ligne est appliqué a tout les sites*/
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
